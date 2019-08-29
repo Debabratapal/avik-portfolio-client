@@ -1,13 +1,13 @@
 
 .black{
   background-color:rgba(0,0,0,0.6) !important;
-  height: 85px !important;
+  height: 130px !important;
   transition: 0.3s !important;
   color: #fff;
 
 }
 .nav__section {
-  height: 75px;
+  height: 130px;
   width: 100%;
   position: fixed; 
   top: 0;
@@ -15,6 +15,13 @@
   z-index: 100;
   transition: 0.3s;
 
+}
+
+.logo-img{
+  width: 166px;
+}
+.logo-img img{
+  width: 100%;
 }
 
 .nav__section:hover {
@@ -28,7 +35,6 @@
 /* #141d31; */
 
 .nav__container {
-  margin: 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;

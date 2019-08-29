@@ -5,9 +5,6 @@
   justify-content: space-between;
 }
 
-.container{
-  margin:0 80px;
-}
 .col {
   flex: 32%;
   max-width: 32%;
