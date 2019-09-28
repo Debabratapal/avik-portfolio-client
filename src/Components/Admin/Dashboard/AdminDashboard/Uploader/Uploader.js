@@ -3,6 +3,13 @@ import './Uploader.css';
 import Dropzone from 'react-dropzone';
 import axios from '../../../../../utils/axios';
 
+const catagory = [
+  {id:"", name:"none"},
+  {id:"landscape",name:"Landscape"},
+  {id:"scenery",name:"Scenery"},
+  {id:"portrait",name:"Portrait"}
+]
+
 export default class UploaderComponent extends Component {
   state = {
     files: [],
@@ -78,9 +85,9 @@ export default class UploaderComponent extends Component {
             className={dyclass.join(' ')}
             value={category}
             onChange={e => this.handleChange(e)}>
-              <option value="">none</option>
-              <option value="5d629d92c6b3a81895196663">Portrait</option>
-              <option value="5d629dccc6b3a81895196664">Scenery</option>
+              {catagory.map(el => (
+                <option value={el.id} key={el.id}>{el.name}</option>
+              ))}
             </select>
           </div>
           <div className="form-group">

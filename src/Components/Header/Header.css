@@ -7,18 +7,16 @@
 
 }
 .nav__section {
-  height: 130px;
   width: 100%;
   position: fixed; 
   top: 0;
   left: 0;
   z-index: 100;
   transition: 0.3s;
-
 }
 
 .logo-img{
-  width: 166px;
+  width: 130px;
 }
 .logo-img img{
   width: 100%;
@@ -46,15 +44,13 @@ ul {
   padding: 0;
 }
 
-.nav_list__item a {
-  text-decoration: none;
-  color: #ff8b3d;
-  font-weight: bold;
+.nav_list__item {
+  cursor: pointer;
 }
 
 .nav__list {
   width: 40%;
-  color: #ff8b3d;
+  color: #fff;
   display: flex;
   list-style: none;
   justify-content: space-around;

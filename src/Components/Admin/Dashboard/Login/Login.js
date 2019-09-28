@@ -9,11 +9,10 @@ export const Login = (props) => {
     'password': '',
   });
   const [redirect, setRedirect] = useState(false);
-  
 
   const onSubmit = e => {
     e.preventDefault();
-    axios.post('/admin/login', form)
+    axios.post('/auth/login', form)
     .then(res => {
       const data = res.data;
       if (data.status) {

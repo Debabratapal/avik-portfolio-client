@@ -1,0 +1,7 @@
+.images-container .images-col {
+  width: 33%;
+}
+
+.images-container .images-col img {
+  width:100%;
+}

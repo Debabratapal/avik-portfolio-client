@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { Admin } from '../../Components/Admin/Admin';
 import AdminDashboard from '../../Components/Admin/Dashboard/AdminDashboard/Dashboard';
 // import { Preview } from '../../Components/Admin/Dashboard/AdminDashboard/Preview/Preview';
+import Gallery from '../../Components/Gallery/Gallery';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Route path="/" exact component={Layout} />
         <Route exact path='/admin' component={Admin} />
         <Route exact path='/admin/dashboard' component={AdminDashboard} />
+        <Route path="/gallery/:id" component={Gallery} />
       </BrowserRouter>
     );
   }
