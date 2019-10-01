@@ -2,6 +2,7 @@ import React from 'react';
 import './Gallery.css';
 import axios from '../../utils/axios';
 import {api} from '../../utils/config';
+import GalleryHeader from '../GalleryHeader/GalleryHeader';
 
 class Gallery extends React.Component {
   state = {
@@ -17,17 +18,23 @@ class Gallery extends React.Component {
 
   render() {
     const {images} = this.state;
-    console.log(images);
     
     return (
       <div>
+        <GalleryHeader />
+        {images.length?
         <div className="images-container">
           {images.map((el, i) => (
-            <div className="images-col">
-            <img key={i} src={api.baseURL+'/images/uploads/'+el.path} alt={el.path}/>
-            </div>
+            // <div className="images-col">
+              <img key={i} src={api.baseURL+'/images/uploads/'+el.path} alt={el.path}/>
+            // </div>
           ))}
         </div>
+          :
+          <div className="no-image">
+            <p>No Image Available</p>
+          </div>
+          }
       </div>
     )
   }
