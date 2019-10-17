@@ -15,7 +15,6 @@ class AdminDashboard extends Component {
   render() {
     const {sideberOpen} = this.state;
     return (
-      
       <BrowserRouter>
       <Sidebar open={this.openSidebar} />
       <div className="admin-dashboard" style={{marginLeft: sideberOpen ? '250px': '0px'}}>
@@ -23,7 +22,6 @@ class AdminDashboard extends Component {
         <Route exact path={'/admin/dashboard/preview'} component={Preview} />
       </div>
       </BrowserRouter>
-      
     )
   }
 }
