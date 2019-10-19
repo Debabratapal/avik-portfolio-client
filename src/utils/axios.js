@@ -1,6 +1,6 @@
 import axios from 'axios';
-import {baseURL} from './config';
+import {api} from './config';
 
 export default axios.create({
-  baseURL: baseURL+'/api',
+  baseURL: api.baseURL+'/api',
 });
