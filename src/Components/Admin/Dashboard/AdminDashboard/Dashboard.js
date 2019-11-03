@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './Dashboard.css';
 import Sidebar from './Sidebar/Sidebar';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { UploadPage } from './UploadPage/UploadPage';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Preview } from './Preview/Preview';
+import { Header } from './Header/Header';
+import SliderImage from './SliderImage/SliderImage';
 
 class AdminDashboard extends Component {
   state = {
@@ -17,10 +18,13 @@ class AdminDashboard extends Component {
     return (
       <BrowserRouter>
       <Sidebar open={this.openSidebar} />
+      <Header title={'Admin'}/>
+      <Switch>
       <div className="admin-dashboard" style={{marginLeft: sideberOpen ? '250px': '0px'}}>
-        <Route exact path={'/admin/dashboard/upload'}  component={UploadPage}/>
+        <Route exact path={'/admin/dashboard/upload'}  component={SliderImage}/>
         <Route exact path={'/admin/dashboard/preview'} component={Preview} />
       </div>
+      </Switch>
       </BrowserRouter>
     )
   }

@@ -17,7 +17,6 @@ class Video extends Component {
   }
 
   componentDidMount() {
-
     let video = this.refs.video;
     console.log(this.refs);
     // console.log(video.duration);

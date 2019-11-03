@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
-import axios from '../../../../utils/axios';
+import axios from '../../utils/axios';
 import { Redirect } from "react-router-dom";
 
 export const Login = (props) => {
@@ -29,7 +29,7 @@ export const Login = (props) => {
   }
 
  if(redirect) {
-   return <Redirect to='/admin/dashboard/upload' />
+   return <Redirect to='/dashboard' />
  }else {
     return (
       <div className="form-container">

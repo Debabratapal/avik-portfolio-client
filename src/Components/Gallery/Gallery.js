@@ -25,9 +25,7 @@ class Gallery extends React.Component {
         {images.length?
         <div className="images-container">
           {images.map((el, i) => (
-            // <div className="images-col">
-              <img key={i} src={api.baseURL+'/images/uploads/'+el.path} alt={el.path}/>
-            // </div>
+            <img key={i} src={api.baseURL+'/images/uploads/'+el.path} alt={el.path}/>
           ))}
         </div>
           :

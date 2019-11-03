@@ -41,6 +41,12 @@
   transition: 0.8s;
 }
 
+.content .con2 {
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+}
+
 .col:hover .content {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.2); 
