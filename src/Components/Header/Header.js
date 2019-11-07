@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Header.css';
 import $ from 'jquery';
 import {api} from '../../utils/config';
+import {Link} from 'react-router-dom';
 
 
 class Header extends Component {
@@ -55,8 +56,10 @@ class Header extends Component {
                 <li className="nav_list__item scroll"
                   onClick={() => this.scrolldownTo('portfolio')}>PORTFOLIO
                 </li>
-                <li className="nav_list__item scroll"
-                  onClick={() => this.scrolldownTo('contect')}>CONTACT
+                <li className="nav_list__item scroll">
+                <Link to="/contact" >
+                  CONTACT
+                </Link>
                 </li>
               </ul>
             </div>

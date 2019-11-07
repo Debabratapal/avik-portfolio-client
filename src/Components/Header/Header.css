@@ -28,6 +28,7 @@
 
 .nav__section:hover .nav_list__item a {
   transition: 0.3s;
+  text-decoration: none;
 }
 
 /* #141d31; */
@@ -46,6 +47,18 @@ ul {
 
 .nav_list__item {
   cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.3s; 
+}
+
+.nav_list__item:hover {
+  font-size: 22px;
+}
+
+.nav_list__item a {
+  text-decoration: none;
+  color: white;
 }
 
 .nav__list {

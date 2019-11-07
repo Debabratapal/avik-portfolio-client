@@ -2,7 +2,6 @@ import React from 'react';
 import './Gallery.css';
 import axios from '../../utils/axios';
 import {api} from '../../utils/config';
-import GalleryHeader from '../GalleryHeader/GalleryHeader';
 
 class Gallery extends React.Component {
   state = {
@@ -21,7 +20,6 @@ class Gallery extends React.Component {
     
     return (
       <div>
-        <GalleryHeader />
         {images.length?
         <div className="images-container">
           {images.map((el, i) => (
